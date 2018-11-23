@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jquery 2</title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("h1")
+				.css("color", "#8E2323")
+				.hide().delay('2000')
+				.fadeIn("slow");
+			$("body").css("background","#FFCC00");
+			$("#div1").css({"margin":"30px","background":"#FFFFFF"});
+			$("#div1 p").css({color:"#0000FF","font-size":"20px"});
+			$("#div1 h1").css({color:"#0000FF","font-size":"20px"});
+		});
+
+		$(document).ready(function(){
+			$("h2")
+				.css("color", "green")
+				.hide().delay('2000')
+				.fadeIn("slow")
+				$("h2").css("cursor","pointer")
+				.click(function(){				
+					$("body").css("background","#FFCC00");
+					$("h2").css("color","#FFFFFF");
+					$("h2").css("cursor","");
+				});
+		});
+	</script>
+</head>
+<body>
+	<h1>Seletores Hierárquicos</h1>
+	<div id="div1">
+		<h1>Seletores Hierárquicos Div</h1>
+		<p>Informações importantes</p>
+	</div>
+	<h2>Outras Informações</h2>
+</body>
+</html>
