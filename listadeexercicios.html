@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homepage Bruno Goulart - Lista de Exercícios</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style type="text/css">
+
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+      #botaocor {
+        background-color: #14d1d1;
+      }
+
+      #botaocor:hover {
+        background-color: #3a7c7c;
+      }
+
+      #botaocor:active {
+        background-color: #3a7c7c;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
+      #id01.show {
+       transition: opacity .4s linear;
+      opacity: 1;
+      }
+
+      #id02.show {
+       transition: opacity .4s linear;
+      opacity: 1;
+      }
+
+      #id03.show {
+       transition: opacity .4s linear;
+      opacity: 1;
+      }
+
+      #id04.show {
+       transition: opacity .4s linear;
+      opacity: 1;
+      }
+     
+      #id01.hide {
+        transition: opacity .7s linear;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #id02.hide {
+        transition: opacity .7s linear;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #id03.hide {
+        transition: opacity .7s linear;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #id04.hide {
+        transition: opacity .7s linear;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .city {display:none}
+      .city2  {display:none}
+      .city3  {display:none}
+      .city4  {display:none}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Bruno Goulart Mossé</span>
+      <span class="site-heading-lower">Lista de Exercícios</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="curriculumvitae.html">Currículo</a>
+            </li> 
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="listadeexercicios.html">Exercícios</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br><br><br>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower">HTML</span>
+                </h2>
+                <p>Exercícios feitos durantes as aulas, apenas utilizando HTML.</p>
+                
+                  <button onclick="mostrar()" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="30px"><font style="font-family: Raleway; "> Todos Exercícios </font> 
+                  </button><br><br>
+
+                  <div class="w3-container">
+                  <div id="id01" class="w3-modal">
+                     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="width: 1000px; height: 690px;" >
+                      <header class="w3-container w3-cyan"> 
+                       <span onclick="ocultar()"  
+                       class="w3-button w3-cyan w3-xlarge w3-display-topright"><font color="white">&times;</font></span>
+                       <font color="white"><h2 style="font-family: Raleway;">Lista de Exercícios</h2></font>
+                      </header>
+
+                      <div class="w3-bar w3-border-bottom">
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex1')">Ex 1</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex2')">Ex 2</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex3')">Ex 3</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex4')">Ex 4</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex5')">Ex 5</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex6')">Ex 6</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex7')">Ex 7</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex8')">Ex 8</button>
+                       <button style="font-family: Raleway; " class="tablink w3-bar-item w3-button" onclick="openCity(event, 'ex9')">Ex 9</button>
+                      </div>
+
+                      <div id="ex1" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/Cores/index.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex2" class="w3-container city">
+                        <br>
+                       <iframe src="Sites/HTML/Exercicio0/Introducao.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex3" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/Exercicio1/Listas.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex4" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/Exercicio1/LogosRedirecionamento.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex5" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/Exercicio2/TodasTabelas.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex6" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/Exercicio3/AtividadeFormulário.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex7" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/FrameExercicio/frame.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex8" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/Marquee/marquee1.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="ex9" class="w3-container city">
+                       <br>
+                       <iframe src="Sites/HTML/Marquee/marquee2.html" width="960px" height="510px"></iframe>
+                      </div>
+
+
+
+
+                      <div class="w3-container w3-light-grey w3-padding ">
+                       <input type="submit" id="fechar" value="Fechar" class="w3-button w3-right w3-white w3-border" 
+                       onclick="ocultar()">
+                      </div>
+                     </div>
+                    </div>
+
+                    </div>
+
+                  <div align="center">
+
+                  <a href="Sites/HTML/Cores/index.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 1</font> 
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/HTML/Exercicio0/Introducao.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 2 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/HTML/Exercicio1/Listas.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 3 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/HTML/Exercicio1/LogosRedirecionamento.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 4 </font>
+                  </a>
+
+                  <br><br>
+                  <a href="Sites/HTML/Exercicio2/TodasTabelas.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; margin-left: 0px">  Exercício 5 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/HTML/Exercicio3/AtividadeFormulário.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 6 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/HTML/FrameExercicio/frame.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 7 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/HTML/Marquee/marquee1.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 8 </font>
+                  </a>
+
+                  <br><br></div>
+                  <a href="Sites/HTML/Marquee/marquee2.html" target="_blank" style="margin-left: 3.5%" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 9 </font>
+                  </a>
+
+                <hr>
+                
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower">CSS</span>
+                </h2>
+                <p>Exercícios feitos durantes as aulas, com a utilização do CSS para uma página HTML.</p>
+                
+                <button onclick="mostrar1()" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="30px"><font style="font-family: Raleway; "> Todos Exercícios </font> 
+                  </button><br><br>
+
+                  <div class="w3-container">
+                  <div id="id02" class="w3-modal">
+                     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="width: 1000px; height: 690px;" >
+                      <header class="w3-container w3-cyan"> 
+                       <span onclick="ocultar1()"  
+                       class="w3-button w3-cyan w3-xlarge w3-display-topright"><font color="white">&times;</font></span>
+                       <font color="white"><h2 style="font-family: Raleway;">Lista de Exercícios</h2></font>
+                      </header>
+
+                      <div class="w3-bar w3-border-bottom">
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe1')">Ex 1</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe2')">Ex 2</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe3')">Ex 3</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe4')">Ex 4</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe5')">Ex 5</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe6')">Ex 6</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe7')">Ex 7</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe8')">Ex 8</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe9')">Ex 9</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe10')">Ex 10</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe11')">Ex 11</button>
+                       <button style="font-family: Raleway; " class="tablink1 w3-bar-item w3-button" onclick="openCity2(event, 'exe12')">Ex 12</button>
+                      </div>
+
+                      <div id="exe1" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio4/BoxAtividade.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe2" class="w3-container city2">
+                        <br>
+                       <iframe src="Sites/CSS/Exercicio4/ExercicioFormulario.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe3" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio5/index.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe4" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio6/index.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe5" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio7/exercicio(1a15).html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe6" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio7/exercicio(16a21).html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe7" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio7/exercicio(22e23).html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe8" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio8/index.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe9" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio9/boxsizing.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe10" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio9/flexbox.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe11" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Exercicio9/flexbox2.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exe12" class="w3-container city2">
+                       <br>
+                       <iframe src="Sites/CSS/Independencia/index.html" width="960px" height="510px"></iframe>
+                      </div>
+
+
+
+
+                      <div class="w3-container w3-light-grey w3-padding ">
+                       <input type="submit" id="fechar" value="Fechar" class="w3-button w3-right w3-white w3-border" 
+                       onclick="ocultar1()">
+                      </div>
+                     </div>
+                    </div>
+
+                    </div>
+
+                  <div align="center">
+
+                  <a href="Sites/CSS/Exercicio4/BoxAtividade.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 1</font> 
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio4/ExercicioFormulario.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 2 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio5/index.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 3 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio6/index.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 4 </font>
+                  </a>
+
+                  <br><br>
+                  <a href="Sites/CSS/Exercicio7/exercicio(1a15).html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; margin-left: 0px">  Exercício 5 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio7/exercicio(16a21).html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 6 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio7/exercicio(22e23).html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 7 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio8/index.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 8 </font>
+                  </a>
+
+                  <br><br>
+                  <a href="Sites/CSS/Exercicio9/boxsizing.html" target="_blank"  class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="21px"><font style="font-family: Raleway; ">  Exercício 9 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio9/flexbox.html" target="_blank"  class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="21px"><font style="font-family: Raleway; ">  Exercício 10 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Exercicio9/flexbox2.html" target="_blank"  class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="21px"><font style="font-family: Raleway; ">  Exercício 11 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/CSS/Independencia/index.html" target="_blank"  class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="21px"><font style="font-family: Raleway; ">  Exercício 12 </font>
+                  </a>
+                </div>
+
+                <hr>
+
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower">JavaScript</span>
+                </h2>
+                <p>Exercícios feitos durantes as aulas, com a utilização do JavaScript para uma página HTML.</p>
+
+
+                <button onclick="mostrar2()" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="30px"><font style="font-family: Raleway; "> Todos Exercícios </font> 
+                  </button><br><br>
+
+                  <div class="w3-container">
+                  <div id="id03" class="w3-modal">
+                     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="width: 1000px; height: 690px;" >
+                      <header class="w3-container w3-cyan"> 
+                       <span onclick="ocultar2()"  
+                       class="w3-button w3-cyan w3-xlarge w3-display-topright"><font color="white">&times;</font></span>
+                       <font color="white"><h2 style="font-family: Raleway;">Lista de Exercícios</h2></font>
+                      </header>
+
+                      <div class="w3-bar w3-border-bottom">
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem1')">Ex 1</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem2')">Ex 2</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem3')">Ex 3</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem4')">Ex 4</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem5')">Ex 5</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem6')">Ex 6</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem7')">Ex 7</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem8')">Ex 8</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem9')">Ex 9</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem10')">Ex 10</button>
+                       <button style="font-family: Raleway; " class="tablink2 w3-bar-item w3-button" onclick="openCity3(event, 'exem11')">Ex 11</button>
+                      
+                      </div>
+
+                      <div id="exem1" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio10/javascript.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem2" class="w3-container city3">
+                        <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio11/conversoes.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem3" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio11/exercicio.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem4" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio11/index.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem5" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio12/funcoes.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem6" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio12/mediaaluno.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem7" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio12/switchestacao.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem8" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio13/loops.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem9" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio13/tempo.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem10" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio14/Todos.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exem11" class="w3-container city3">
+                       <br>
+                       <iframe src="Sites/JAVASCRIPT/Exercicio14/validaremail.html" width="960px" height="510px"></iframe>
+                      </div>
+
+
+                      <div class="w3-container w3-light-grey w3-padding ">
+                       <input type="submit" id="fechar" value="Fechar" class="w3-button w3-right w3-white w3-border" 
+                       onclick="ocultar2()">
+                      </div>
+                     </div>
+                    </div>
+
+                    </div>
+
+                  <div align="center">
+
+                  <a href="Sites/JAVASCRIPT/Exercicio10/javascript.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 1</font> 
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio11/conversoes.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 2 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio11/exercicio.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 3 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio11/index.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 4 </font>
+                  </a>
+
+                  <br><br>
+                  <a href="Sites/JAVASCRIPT/Exercicio12/funcoes.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; margin-left: 0px">  Exercício 5 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio12/mediaaluno.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 6 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio12/switchestacao.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 7 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio13/loops.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="23px"><font style="font-family: Raleway; ">  Exercício 8 </font>
+                  </a>
+
+                  <br><br>
+                  <a href="Sites/JAVASCRIPT/Exercicio13/tempo.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="21px"><font style="font-family: Raleway; ">  Exercício 9 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio14/Todos.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="21px"><font style="font-family: Raleway; ">  Exercício 10 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JAVASCRIPT/Exercicio14/validaremail.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="21px"><font style="font-family: Raleway; ">  Exercício 11 </font>
+                 </a>
+                </div>
+                
+
+                <hr>
+
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower">Jquery</span>
+                </h2>
+                <p>Exercícios feitos durantes as aulas, com a utilização do JavaScript para uma página HTML.</p>
+
+
+                <button onclick="mostrar4()" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="30px"><font style="font-family: Raleway; "> Todos Exercícios </font> 
+                  </button><br><br>
+
+                  <div class="w3-container">
+                  <div id="id04" class="w3-modal">
+                     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="width: 1000px; height: 690px;" >
+                      <header class="w3-container w3-cyan"> 
+                       <span onclick="ocultar4()"  
+                       class="w3-button w3-cyan w3-xlarge w3-display-topright"><font color="white">&times;</font></span>
+                       <font color="white"><h2 style="font-family: Raleway;">Lista de Exercícios</h2></font>
+                      </header>
+
+                      <div class="w3-bar w3-border-bottom">
+                       <button style="font-family: Raleway; " class="tablink4 w3-bar-item w3-button" onclick="openCity4(event, 'exemp1')">Ex 1</button>
+                       <button style="font-family: Raleway; " class="tablink4 w3-bar-item w3-button" onclick="openCity4(event, 'exemp2')">Ex 2</button>
+                       <button style="font-family: Raleway; " class="tablink4 w3-bar-item w3-button" onclick="openCity4(event, 'exemp3')">Ex 3</button>
+                      
+                      </div>
+
+                      <div id="exemp1" class="w3-container city4">
+                       <br>
+                       <iframe src="Sites/JQUERY/Exercicio15/Jquery.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exemp2" class="w3-container city4">
+                        <br>
+                       <iframe src="Sites/JQUERY/Exercicio15/Jquery2.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div id="exemp3" class="w3-container city4">
+                       <br>
+                       <iframe src="Sites/JQUERY/Exercicio15/AtividadeJquery.html" width="960px" height="510px"></iframe>
+                      </div>
+
+                      <div class="w3-container w3-light-grey w3-padding ">
+                       <input type="submit" id="fechar" value="Fechar" class="w3-button w3-right w3-white w3-border" 
+                       onclick="ocultar4()">
+                      </div>
+                     </div>
+                    </div>
+
+                    </div>                  
+
+                  <a href="Sites/JQUERY/Exercicio15/Jquery.html" target="_blank" style="margin-left: 3.5%;" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 1</font> 
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JQUERY/Exercicio15/Jquery2.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 2 </font>
+                  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                  <a href="Sites/JQUERY/Exercicio15/AtividadeJquery.html" target="_blank" class="btn btn-info btn-lg" id="botaocor">
+                   <img src="https://png.icons8.com/wired/50/000000/book.png" width="25px"><font style="font-family: Raleway; ">  Exercício 3 </font>
+                  </a>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <font color="white"><p>Me encontre nas redes sociais</p>
+        <a href="https://www.facebook.com/bruno.mosse.1"><i style="font-size:40px" class="fa fa-facebook-official w3-hover-opacity"></i></a>&nbsp&nbsp&nbsp&nbsp
+        <a href="https://www.instagram.com/bruno.goulart_/"><i style="font-size:40px" class="fa fa-instagram w3-hover-opacity"></i></a>&nbsp&nbsp&nbsp&nbsp
+        <a href="https://github.com/BrunoGrM"><i style="font-size:40px" class="fa w3-hover-opacity">&#xf09b;</i></a></font><br><br>
+        <p class="m-0 small"><font color="white">Copyright &copy; Homepage Bruno 2018</font></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+      function ocultar() {
+          document.getElementById('id01').style.display='block';
+      var element = document.getElementById("id01");
+      element.classList.add("hide");
+         
+      }
+
+      function mostrar() {
+          document.getElementById('id01').style.display='block';
+      var element = document.getElementById("id01");
+
+      element.classList.remove("hide");
+      element.classList.add("show"); 
+        }
+
+   document.getElementsByClassName("tablink")[0].click();
+
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+
+      var modal = document.getElementById('id01');
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+        }
+      }
+
+      function ocultar1() {
+           document.getElementById('id02').style.display='block';
+      var element = document.getElementById("id02");
+      element.classList.add("hide");
+         
+      }
+
+      function mostrar1() {
+          document.getElementById('id02').style.display='block';
+      var element = document.getElementById("id02");
+
+      element.classList.remove("hide");
+      element.classList.add("show"); 
+        }
+
+      document.getElementsByClassName("tablink1")[0].click();
+
+      function openCity2(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city2");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink1");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+
+      var modal = document.getElementById('id02');
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+        }
+      }
+
+
+      function ocultar2() {
+           document.getElementById('id03').style.display='block';
+      var element = document.getElementById("id03");
+      element.classList.add("hide");         
+      }
+
+      function mostrar2() {
+       document.getElementById('id03').style.display='block';
+      var element = document.getElementById("id03");
+
+      element.classList.remove("hide");
+      element.classList.add("show"); 
+        }
+
+   document.getElementsByClassName("tablink2")[0].click();
+
+      function openCity3(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city3");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink2");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+
+      var modal = document.getElementById('id03');
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+        }
+      }
+
+      function ocultar4() {
+           document.getElementById('id04').style.display='block';
+      var element = document.getElementById("id04");
+      element.classList.add("hide");
+         
+      }
+
+      function mostrar4() {
+          document.getElementById('id04').style.display='block';
+      var element = document.getElementById("id04");
+
+      element.classList.remove("hide");
+      element.classList.add("show"); 
+        }
+
+      document.getElementsByClassName("tablink4")[0].click();
+
+      function openCity4(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city4");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink4");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+
+      var modal = document.getElementById('id04');
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+        }
+      }
+
+</script>
+
+
+  </body>
+
+  <!-- Script to highlight the active date in the hours list -->
+  <script>
+    $('.list-hours li').eq(new Date().getDay()).addClass('today');
+  </script>
+
+</html>
