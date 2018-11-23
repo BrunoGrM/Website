@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Validações</title>
+	<style type="text/css">
+		* {
+			font-size: 15px;
+			font-family: Arial;
+		}
+	</style>
+</head>
+<body bgcolor="#F5DEB3">
+	<form name="fcadastro" action="mailto:brunoitapeba@yahoo.com.br" method="POST" onsubmit="return validacao1();">
+		<p><label for="iNome">Digite seu nome: </label>
+			<input type="text" name="tNome" id="iNome" size="20" maxlength="20" placeholder="Nome Completo"/>
+		</p>
+		<input type="submit" name="submit" value="Enviar"/>
+	</form>
+
+	<br>
+	<p>Entre com um número entre 10 e 50:</p>
+
+	<input type="number" id="num1" min="10" max="50">
+	<button onclick="validacao()">OK</button>
+
+	<p id="imprimi"></p>
+
+	<br>
+	<header>
+		<p id="nome"></p>
+		<p id="nome2"></p>
+	</header>
+	<script type="text/javascript">
+		var txt = "Ana Amélia";
+		document.getElementById("nome").innerHTML = "A palavra escolhida tem: " + txt.length +  " caracteres!";
+
+		var txt2 = "Para escrever: uma palavra entre \"aspas duplas\" ou \'simples\' ou ainda utilizar uma \\.";
+		document.getElementById("nome2").innerHTML = txt2;
+	</script>
+
+	<script type="text/javascript">
+		function validacao() {
+			var idnum1 = document.getElementById('num1');
+			if (idnum1.checkValidity() == false) {
+				document.getElementById('imprimi').innerHTML = idnum1.validationMessage;
+			}
+			else {
+				document.getElementById('imprimi').innerHTML = "Acertou!!!!";
+			}
+		}
+	</script>
+
+	<script type="text/javascript">
+		function validacao1() {
+			if(document.fcadastro.tNome.value == "") {
+				alert("Digite seu nome!");
+				document.fcadastro.tNome.focus();
+				return false;
+			}
+			else {
+				alert("Nome enviado!");
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<style type="text/css">
+		h3 {
+			font-family: Roboto, sans-serif;
+			color: black;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function perguntas() {
+			origem = prompt("Informe a Instituição onde estuda", "CESJF");
+			resp = confirm("Você está bem?");
+			var usuario = prompt("Informe seu nome");
+			document.getElementById("nome").innerHTML = "Olá " + usuario;
+		}
+	</script>
+</head>
+<body bgcolor="#2E8B57">
+	<div align="center">
+		<h3>Clique no botão para responder um formulário</h3>
+		<input type="button" value="Responder Perguntas" onclick="perguntas()">
+		<br><br><br>
+	<header>
+		<p id="nome"></p>
+	</header>
+	<button type="button" onclick="confirm('Confirme a opção! \nEscolha Cancelar ou OK!')">
+		Clique Aqui!
+	</button>
+	</div>
+</body>	
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Estação do ano</title>
+	<style type="text/css">
+		body {
+			font-family: Roboto, sans-serif;
+		}
+	</style>
+	<script type="text/javascript">
+		function estacao() {
+			estacao =  parseInt(prompt("Digite um número de 0 à 3: "));
+			switch (estacao) {
+				case 0 : document.getElementById("estacao").innerHTML = "A estação escolhida foi a Primavera";
+				break;
+				case 1 : document.getElementById("estacao").innerHTML = "A estação escolhida foi o Verão";
+				break;
+				case 2 : document.getElementById("estacao").innerHTML = "A estação escolhida foi o Outono";
+				break;
+				case 3 : document.getElementById("estacao").innerHTML = "A estação escolhida foi o Inverno";
+				break;
+				default : alert("Estação do ano inválida!");
+			}
+		}
+	</script>
+</head>
+<body bgcolor="gold">
+	<h3>Clique no botão para escolher a estação do ano</h3>
+	<input type="button" value="Estação" onclick="estacao()">
+	<br><br>
+	<header>
+		<p id="estacao"></p>
+	</header>
+</body>
+</html>

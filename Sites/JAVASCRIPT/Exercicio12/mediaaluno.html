@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Média do aluno</title>
+	<style type="text/css">
+		body {
+			font-family: Roboto, sans-serif;
+		}
+	</style>
+	<script type="text/javascript">
+		function soma() {
+			nome =  prompt("Nome do aluno");
+			a = parseInt(prompt("Digite a primeira nota"));
+			b = parseInt(prompt("Digite a segunda nota"));
+			c = parseInt(prompt("Digite a terceira nota"));
+			media = (a+b+c)/3;
+			
+			faltas = parseInt(prompt("Digite o número de faltas"));
+			if (media >= 60 && faltas <= 18) {
+				document.getElementById("situacao").innerHTML = "O aluno " + nome + " está aprovado!";
+			} else {
+				document.getElementById("situacao").innerHTML = "O aluno " + nome + " está reprovado!";
+			} 
+		}
+	</script>
+
+</head>
+<body bgcolor="gold">
+	<h3>Clique no botão para realizar a média do aluno</h3>
+	<input type="button" value="Média" onclick="soma()">
+	<br><br>
+	<header>
+		<p id="situacao"></p>
+	</header>
+
+	
+</body>
+</html>

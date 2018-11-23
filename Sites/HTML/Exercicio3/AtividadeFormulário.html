@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário</title>
+	<style type="text/css">
+		p{
+			font-family: fantasy;
+			font-size: 15px;
+			
+		}
+		legend{
+			font-family: fantasy;
+			font-size: 20px;
+			color: red;
+			
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="mailto:aamelia.mg@gmail.com">
+		<fieldset>
+			<legend align="center">Identificação dos alunos do CES</legend>
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<p>Nome Completo:
+				<input type="text" name="iNome" id="iNome" size="20" maxlength="20" placeholder="Nome Completo" /></p> 
+				<p>Data de Nascimento: <input type="date" name="iData" id="iData"/></p>
+				<p><label for="iEmail">Digite seu E-mail:</label>
+				<input type="text" name="iEmail" id="iEmail" size="30" maxlength="30" placeholder="E-mail" /></p> 
+				<p>Telefone: <input type="tel" name="iTel" id="iTel" placeholder="(XX) Xxxxx-xxxx" /></p>
+				
+				<p>Sexo:</p>
+					<input type="radio" name="iSexo" id="iMasc" checked/> <label for="iMasc"> Masculino </label>
+					<br/>
+					<input type="radio" name="iSexo" id="iFem"/> <label for="iFem"> Feminino </label>
+			</fieldset> 
+			<br>
+
+			<fieldset>
+				<legend>Endereço</legend>
+				<p><label for="iRua">Rua:</label>
+				<input type="text" name="iRua" id="iRua" size="30" maxlength="30" placeholder="Rua" />
+				<p>Número: <input type="number" name="iNumero" id="iNumero"/></p>
+				<p><label for="iEstado">Estado:</label>
+				<input type="text" name="iEstado" id="iEstado" size="30" maxlength="30" placeholder="Estado" /></p>
+				<p><label for="iCidade">Cidade:</label>
+				<input type="text" name="iCidade" id="iCidade" size="30" maxlength="30" placeholder="Cidade" /></p>
+			</fieldset>
+				<br>
+			<fieldset>
+				<legend>Qual seu esporte preferido?</legend>
+				<select name="opcoes">
+					<option value="natação" selected>Natação
+					<option value="futebol">Futebol
+					<option value="basquete">Basquete
+					<option value="handbol">Handbol
+				</select>
+			</fieldset>
+
+				<br>
+
+				<fieldset>
+				<legend>Preferências:</legend>
+				<p><input type="checkbox" name="iPref" value="jogos" checked/> Jogos</p>
+				<p><input type="checkbox" name="iPref" value="novela" /> Novela</p>
+				<p><input type="checkbox" name="iPref" value="notícias" /> Notícias</p>
+				<p><input type="checkbox" name="iPref" value="outros"/> Outros</p>
+				</fieldset>
+		 	<br>
+		 	<fieldset>
+		<legend>Mensagem de Usuário</legend>
+		<p><label for="iUrg">Grau de Urgência:</label></p>
+		<p>Mín<input type="range" name="tUrg" id="iUrg" min="0" max="10" step="2" />Máx</p>
+	</fieldset>
+		<br>
+		<fieldset>
+	<legend>Curso:</legend>
+	<p><label for="iCurso">Curso:</label>
+				<input type="text" name="iCurso" id="iCurso" size="30" maxlength="30" placeholder="Curso" /></p>
+				<p>Período: <input type="number" name="iPeriodo" id="iPeriodo"/></p>
+		</fieldset>
+<br>
+		<fieldset>
+				<legend>Redes Sociais:</legend>
+				<p><input type="checkbox" name="iRede" value="facebook" checked/> Facebook</p>
+				<p><input type="checkbox" name="iRede" value="twitter" /> Twitter</p>
+				<p><input type="checkbox" name="iRede" value="instagram" /> Instagram</p>
+				<p><input type="checkbox" name="iRede" value="linkedin" /> Linkedin</p><br>
+				<p>Cor preferida:</p>
+				<p><input type="color" name="tCor" id="iCor" value="#FF0000"/></p>
+				</fieldset>
+				<br>
+				<fieldset>
+				<legend>Deixe sua opinião:</legend> <br>
+				<textarea name="Comentários" rows=5 cols=50 placeholder="Opinião"></textarea>
+			</fieldset>
+				</fieldset>	
+	</form>
+</body>
+</html>

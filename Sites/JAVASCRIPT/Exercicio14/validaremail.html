@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Validação de Formulário</title>
+	<style type="text/css">
+		* {
+			font-size: 15px;
+			font-family: Arial;
+		}
+		.id{
+			font-weight: bold !important;
+			font-size: 20px !important;
+		}
+	</style>
+</head>
+<body bgcolor="#F0E68C">
+	<p class="id">Formulário</p>
+	<form name="fcadastro" action="mailto:brunoitapeba@yahoo.com.br" method="POST" onsubmit="return validacao();">
+		<p><label for="iNome">Digite seu nome: </label>
+			<input type="text" name="tNome" id="iNome" size="20" maxlength="20" placeholder="Nome Completo"/>
+		</p>
+		<p><label for="iSenha">Senha: </label>
+			<input type="password" name="tSenha" size="8" placeholder="8 dígitos"/>
+		</p>
+		<p><label for="iEmail">E-mail: </label>
+			<input type="email" name="tEmail" size="30" maxlength="30" placeholder="e-mail"/>
+		</p>
+		<input type="submit" name="submit" value="Enviar"/>
+	</form>
+	<script type="text/javascript">
+		function validacao() {
+			if (document.fcadastro.tNome.value == "" ) {
+				alert("Digite seu nome!");
+				document.fcadastro.tNome.focus();
+				return false;
+			}
+			if (document.fcadastro.tSenha.value.length < 8) {
+				alert("Senha com mínimo de 8 caracteres!");
+				document.fcadastro.tSenha.focus();
+				return false;
+			}
+			if (document.fcadastro.tEmail.value == "" || document.fcadastro.tEmail.value.indexOf('@') == " " || document.fcadastro.tEmail.value.indexOf('.') == "") {
+				alert("Digite um endereço de e-mail válido!");
+				document.fcadastro.tEmail.focus();
+				return false;
+			}
+			else {
+				alert("Formulário enviado com sucesso!");
+			}
+		}
+	</script>
+</body>
+</html>

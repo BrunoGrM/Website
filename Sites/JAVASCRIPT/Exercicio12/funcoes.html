@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Funções</title>
+	<style type="text/css">
+		body {
+			font-family: Roboto, sans-serif;
+		}
+	</style>
+	<script type="text/javascript">
+		function mens() {
+			nome1 = "Carlos";
+			nome2 = "Eder";
+			a = alert("Olá " + nome1 + ", olá " + nome2);
+			return a;
+		}
+
+		function soma() {
+			a = parseInt(prompt("Digite o primeiro valor"));
+			b = parseInt(prompt("Digite o segundo valor"));
+			c = a+b;
+			d = a-b;
+			e = a*b;
+			f = a/b;
+			alert("A soma é " + c + "\n" + "A subtração é " + d + "\n" + "A multiplicação é " + e + "\n" + "A divisão é " + f);
+			calculo = (a+b)/2;
+			alert("A média é: " + calculo);
+		}
+	</script>
+</head>
+<body bgcolor="gold">
+	<h3>Clique para saber alguns cálculos de números e sua média</h3>
+	<input type="button" value="Realizar Cálculos" onclick="soma()">
+	<br><br><br>
+	<input type="button" value="Clique Aqui!" onclick="mens()">
+</body>
+</html>

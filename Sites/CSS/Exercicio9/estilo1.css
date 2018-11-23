@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#menor {
+	width: 250px;
+	height: 200px;
+	background-color: #160255;
+	color: #FFFFFF;
+}
+
+#maior {
+	width: 250px;
+	height: 200px;
+	padding: 80px;
+	background-color: #910000;
+	box-sizing: border-box;
+	color: #FFFFFF;
+}

@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#cabeca {
+	width: 100%;
+	height: 200px;
+	background: #000000;
+	text-align: center;
+	color: #FFFFFF;
+}
+#corpo {
+	width: 100%;
+	height: 400px;
+	background: #CD5C5C;
+	text-align: center;
+}
+#pe {
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	background: #F5DED3;
+}
+h3 {
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	color: #660066;
+}
+img {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 300px;
+	height: 200px;
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conversões</title>
+</head>
+<body bgcolor="#2E8B57">
+	<h4>Diferença entre Number(), parseInt() e parseFloat()</h4>
+	<p id="valores1"></p>
+	<p id="valores2"></p>
+	<p id="valores3"></p>
+	<script type="text/javascript">
+		document.getElementById("valores1").innerHTML = 
+			"Number(true) = " + Number(true) + "<br>" +
+			"Number(false) = " + Number(false) + "<br>" +
+			"Number(5) = " + Number(5) + "<br>" +
+			"Number(5.5) = " + Number(5.5) + "<br>" +
+			"Number(\"5ab\") = " + Number("5ab") + "<br>" +
+			"Number(\"5 6\") = " + Number("5 6") + "<br>";
+
+		document.getElementById("valores2").innerHTML = 
+			"parseInt(5) = " + parseInt(5) + "<br>" +
+			"parseInt(5.5) = " + parseInt(5.5) + "<br>" +
+			"parseInt(5ab) = " + parseInt("5ab") + "<br>" +
+			"parseInt(\"5 6\") = " + parseInt("5 6") + "<br>";
+
+		document.getElementById("valores3").innerHTML = 
+			"parseFloat(5) = " +parseFloat(5) + "<br>" +
+			"parseFloat(5.5) = " +parseFloat(5.5) + "<br>" +
+			"parseFloat(\"5ab\") = " +parseFloat("5ab") + "<br>" +
+			"parseFloat(\"5 6\") = " +parseFloat("5 6") + "<br>";
+	</script>
+
+	<script type="text/javascript">
+		function verificar() {
+			num_b = parseFloat(prompt("Digite um número",""));
+			alert(num_b + " é do tipo " + typeof(num_b));
+
+			string_a = "2 é um número primo!";
+			num_a = parseInt(string_a);
+			alert(num_a);
+		}
+	</script>
+
+	<h4>JavaScript - toFixed()</h4>
+	<script type="text/javascript">
+		a = 10/3;
+		document.write(a);
+		a = a.toFixed(2);
+		document.write("<br>" + a);
+	</script>
+
+	<h4>Clique no botão para verificar um número</h4>
+	<input type="button" value="Verificar Número" onclick="verificar()">
+
+</body>
+</html>

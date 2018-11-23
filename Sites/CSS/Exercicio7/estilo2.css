@@ -1,0 +1,13 @@
+a {
+	font-family: Tahoma;
+	font-size: 25px;
+	color: #FF0000;
+}
+h2 {
+	font-family: Tahoma;
+}
+.conteudo {
+	width: 200px;
+	height: 200px;
+	border:2px solid #999;
+}

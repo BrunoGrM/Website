@@ -1,0 +1,25 @@
+h1 {
+	background-color: #D3D3D3;
+	margin: 25px;
+	border: 20px solid green;
+	padding: 25px;
+	width: 300px;
+	text-align: center;
+	font-size: 25px;
+	font-family: Courier;
+	font-weight: bold;
+	border-style: dotted;
+}
+
+p {
+	background-color: #D3D3D3;
+	margin: 25px;
+	border: 20px solid red;
+	padding: 25px;
+	width: 300px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Courier;
+	font-weight: bold;
+}
+

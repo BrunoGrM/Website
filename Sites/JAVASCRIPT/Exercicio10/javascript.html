@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Exemplo JavaScript</title>
+	<meta charset="UTF-8">
+
+</head>
+<body>
+	<h1>Javascript</h1>
+
+	<p id="mens"></p>
+	<script type="text/javascript">
+		document.getElementById("mens").innerHTML = "Bem Vindo!";
+	</script>
+
+	<input type="button" value="Clique" onClick = alert("Olá")><br><br>
+
+	<p id="p1">Meu primeiro exemplo JavaScript.</p>
+	<button type="button" onClick='document.getElementById("p1").innerHTML = "Agora é JavaScript!";'>
+		Clique Aqui!
+	</button>
+	<br><br>
+	<img src="gato.jpg" width="400px" height="300px" onMouseOver="src='cachorro.jpg' " onMouseOut="src='gato.jpg' ">
+	<br><br>
+	<a href="link.html" onClick='alert("Sem redirecionamento"); return false;'>
+		Clique!
+	</a><br><br>
+
+	<p id="mans">Bem Vindo!</p>
+	<p id="inf"></p>
+	<script type="text/javascript">
+		var texto = document.getElementById("mans");
+		document.getElementById("inf").innerHTML = "Este parágrafo é de " + texto.innerHTML;
+	</script>
+	<br><br>
+
+	<h1>JavaScript</h1>
+	<img id="img1" width="400px" height="300px" src="gato.jpg">
+	<script type="text/javascript">
+		document.getElementById("img1").src = "cachorro.jpg";
+	</script>
+	<br><br>
+
+	<p id="p3">Bem Vindo!</p>
+	<p id="p4">Boa Sorte!</p>
+	<script type="text/javascript">
+		document.getElementById("p3").style.color = "#191970";
+		document.getElementById("p3").style.fontWeight = "bold";
+		document.getElementById("p4").style.color = "#D02090";
+		document.getElementById("p4").style.fontFamily = "Arial";
+		document.getElementById("p4").style.fontSize = "larger";
+	</script>
+	<br>
+
+	<p id="p5">Bem Vindo!</p>
+	<button type="button" onClick="document.getElementById('p5').style.color = '#006400'; document.getElementById('p5').style.fontWeight = 'bold' ">
+		Clique Aqui!!!!!
+	</button>
+
+</body>
+</html>

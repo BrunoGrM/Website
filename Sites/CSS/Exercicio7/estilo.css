@@ -1,0 +1,36 @@
+h1 {
+	color: green;
+}
+p {
+	font-size: 20px;
+	font-family: Tahoma;
+}
+strike {
+	font-size: 25px;
+}
+#geral {
+	width: 40%;
+	height: 40%;
+	margin: 50px;
+	border-width: thin;
+	border-style: solid;
+}
+h4 {
+	color: #660066;
+	font-size: 25px;
+}
+#l1 {
+	font-family: Arial;
+}
+#l2 {
+	font-family: Courier;
+}
+#l3 {
+	font-family: sans-serif;
+}
+#l4 {
+	font-family: Verdana;
+}
+#texto {
+	text-align: justify;
+}

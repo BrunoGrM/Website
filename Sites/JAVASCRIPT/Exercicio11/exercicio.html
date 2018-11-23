@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Operações Numéricas</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		h3 {
+			font-family: Roboto, sans-serif;
+			color: black;
+		}
+	</style>
+</head>
+<body bgcolor="#2E8B57">
+	<div align="center">
+		<h3>Clique no botão para realizar as operações</h3>
+		<input type="button" value="Realizar Operações" onclick="operacoes()">
+	</div>
+	<script type="text/javascript">
+		function operacoes() {
+
+			num_a = parseInt(prompt("Digite um número",""));
+			num_b = parseInt(prompt("Digite outro número",""));
+			num_c = parseInt(prompt("Digite outro número",""));
+
+			adicao = num_a + num_b;
+			document.write("Adição: " + adicao);
+
+			subtracao = num_a - num_b;
+			document.write("<br>" + "Subtração: " + subtracao);
+
+			divisao = num_a / num_b;
+			document.write("<br>" + "Divisão: " + divisao);
+
+			multiplicacao = num_a * num_b;
+			document.write("<br>" + "Multiplicação: " + multiplicacao);
+
+			modulo = num_a % num_b;
+			document.write("<br>" + "Módulo: " + modulo + "<br>");
+
+			media = (num_a + num_b + num_c)/3;
+			if(media > 6) {
+				document.write("<br>" + "Média aprovada, maior que 6!");
+			}
+			else {
+				document.write("<br>" + "Média reprovada, menor que 6!");
+			}
+		}
+	</script>
+</body>
+</html>

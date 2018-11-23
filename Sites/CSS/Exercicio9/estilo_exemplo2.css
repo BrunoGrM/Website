@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #9DADAA;
+}
+
+.container {
+	width: 100%;
+	height: 500px;
+	border: solid 2px #244841;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.itens {
+	width: 10%;
+	height: 100px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#item1 {
+	background-color: #DFBC00;
+}
+
+#item2 {
+	background-color: #537C00;
+}
+
+#item3 {
+	background-color: #B40000;
+}
+
+#item4 {
+	background-color: #B45100;
+}
+
+#item5 {
+	background-color: #042778;
+}
