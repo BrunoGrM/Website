@@ -1,4 +1,4 @@
-<h3 align="center">:computer: <a href="https://brunogrm.github.io/website">Acessar site</a></h3>
+<h3 align="center">:computer: <a href="https://brunogrm.github.io/Website">Acessar site</a></h3>
  
 ## :rocket: Desenvolvimento
 
