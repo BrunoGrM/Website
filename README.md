@@ -1,7 +1,5 @@
-<h3 align="center">
-	:computer:[Acessar site](https://brunogrm.github.io/website)
-</h3>
-
+<h3 align="center">:computer: <a href="https://brunogrm.github.io/website" target="_blank">Acessar site</a></h3>
+ 
 ## :rocket: Desenvolvimento
 
 Esse projeto foi desenvolvido em:
